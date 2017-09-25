@@ -15,6 +15,9 @@
     <Attribute name="AcquirePeriod"       type="EPICS_PV" source="CCS1:det1:AcquirePeriod_RBV"    dbrtype="DBR_NATIVE"  description="Acquire period"/>
     <Attribute name="ImageMode"           type="EPICS_PV" source="CCS1:det1:ImageMode_RBV"        dbrtype="DBR_NATIVE"  description="Image mode"/>
     <Attribute name="TriggerMode"         type="EPICS_PV" source="CCS1:det1:TriggerMode_RBV"      dbrtype="DBR_NATIVE"  description="Trigger mode"/>
+    <Attribute name="Current"             type="EPICS_PV" source="DTU:Current"                    dbrtype="DBR_NATIVE"  description="Current"/>
+    <Attribute name="Sample"              type="EPICS_PV" source="DTU:Sample"                     dbrtype="DBR_NATIVE"  description="Sample"/>
+    <Attribute name="Comment"             type="EPICS_PV" source="DTU:Comment"                    dbrtype="DBR_NATIVE"  description="Comment"/>
 
 <!--
     <Attribute name="ID_Energy"           type="EPICS_PV" source="ID34:Energy"                  dbrtype="DBR_NATIVE"  description="Undulator energy"/>

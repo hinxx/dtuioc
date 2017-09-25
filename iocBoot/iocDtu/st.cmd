@@ -75,6 +75,8 @@ dbLoadRecords("$(ADCORE)/ADApp/Db/NDStdArrays.template", "P=$(PREFIX),R=trace1:,
 #asynSetTraceIOMask("$(PORT)",0,2)
 #asynSetTraceMask("$(PORT)",0,255)
 
+dbLoadRecords("$(TOP)/db/dtu.db", "P=DTU:,R=")
+
 iocInit()
 
 # save things every thirty seconds

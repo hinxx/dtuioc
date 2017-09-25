@@ -1,0 +1,18 @@
+
+record(waveform, "$(P)$(R)Comment")
+{
+	field(FTVL, "CHAR")
+	field(NELM, "1000")
+}
+
+record(ai, "$(P)$(R)Current")
+{
+	field(VAL,  "0")
+	field(PREC, "3")
+}
+
+record(waveform, "$(P)$(R)Sample")
+{
+	field(FTVL, "CHAR")
+	field(NELM, "256")
+}
