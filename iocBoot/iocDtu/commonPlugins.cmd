@@ -13,9 +13,13 @@
 # $(CBUFFS)      The maximum number of frames buffered in the NDPluginCircularBuff plugin
 # $(MAX_THREADS) The maximum number of threads for plugins which can run in multiple threads. Defaults to 5.
 
-# Create an HDF5 file saving plugin
+# Create 3 HDF5 file saving plugins
 NDFileHDF5Configure("$(PORT)FileHDF1", $(QSIZE), 0, "$(PORT)", 0)
 dbLoadRecords("NDFileHDF5.template",  "P=$(PREFIX),R=HDF1:,PORT=$(PORT)FileHDF1,ADDR=0,TIMEOUT=1,NDARRAY_PORT=$(PORT)")
+NDFileHDF5Configure("$(PORT)FileHDF2", $(QSIZE), 0, "$(PORT)", 0)
+dbLoadRecords("NDFileHDF5.template",  "P=$(PREFIX),R=HDF2:,PORT=$(PORT)FileHDF2,ADDR=0,TIMEOUT=1,NDARRAY_PORT=$(PORT)")
+NDFileHDF5Configure("$(PORT)FileHDF3", $(QSIZE), 0, "$(PORT)", 0)
+dbLoadRecords("NDFileHDF5.template",  "P=$(PREFIX),R=HDF3:,PORT=$(PORT)FileHDF3,ADDR=0,TIMEOUT=1,NDARRAY_PORT=$(PORT)")
 
 # Create 4 ROI plugins
 NDROIConfigure("$(PORT)ROI1", $(QSIZE), 0, "$(PORT)", 0, 0, 0, 0, 0, $(MAX_THREADS=5))
