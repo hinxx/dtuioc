@@ -11,6 +11,12 @@ record(ai, "$(P)$(R)Current")
 	field(PREC, "3")
 }
 
+record(ai, "$(P)$(R)Temperature")
+{
+	field(VAL,  "0")
+	field(PREC, "3")
+}
+
 record(waveform, "$(P)$(R)Sample")
 {
 	field(FTVL, "CHAR")
