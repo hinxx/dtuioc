@@ -1,0 +1,3 @@
+file "tlccs_settings.req",          P=$(P),  R=det1:
+file "NDStdArrays_settings.req",    P=$(P),  R=trace1:
+file "commonPlugin_settings.req",   P=$(P)

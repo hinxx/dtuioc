@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display typeId="org.csstudio.opibuilder.Display" version="1.0">
+  <x>314</x>
+  <y>401</y>
+  <width>500</width>
+  <height>90</height>
+  <font>
+    <fontdata fontName="arial" height="12" pixels="true" style="1"/>
+  </font>
+  <foreground_color>
+    <color blue="0" green="0" name="black-14" red="0"/>
+  </foreground_color>
+  <background_color>
+    <color blue="200" green="200" name="GLOBAL canvas" red="200"/>
+  </background_color>
+  <name>Feature Help</name>
+  <show_grid>true</show_grid>
+  <grid_space>5</grid_space>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0">
+    <auto_size>false</auto_size>
+    <background_color>
+      <color blue="200" green="200" name="GLOBAL canvas" red="200"/>
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color blue="0" green="0" name="black-14" red="0"/>
+    </border_color>
+    <border_style>0</border_style>
+    <font>
+      <fontdata fontName="arial" height="12" pixels="true" style="1"/>
+    </font>
+    <foreground_color>
+      <color blue="0" green="0" name="black-14" red="0"/>
+    </foreground_color>
+    <height>90</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>EDM Label</name>
+    <text>$(desc0)&#xd;$(desc1)&#xd;$(desc2)&#xd;$(desc3)&#xd;$(desc4)&#xd;$(desc5)</text>
+    <transparent>true</transparent>
+    <width>500</width>
+    <x>0</x>
+    <y>0</y>
+  </widget>
+</display>
