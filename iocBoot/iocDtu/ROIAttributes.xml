@@ -1,0 +1,26 @@
+<?xml version="1.0" standalone="no" ?>
+<!-- Attributes -->
+<Attributes
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../../../ADCore/XML_schema/NDAttributes.xsd"
+    >
+    <Attribute name="BinX"            type="PARAM"    source="DIM0_BIN"                datatype="INT"        description="X binning"/>
+    <Attribute name="BinY"            type="PARAM"    source="DIM1_BIN"                datatype="INT"        description="Y binning"/>
+    <Attribute name="BinStartX"       type="PARAM"    source="DIM0_MIN"                datatype="INT"        description="X ROI start"/>
+    <Attribute name="BinStartY"       type="PARAM"    source="DIM1_MIN"                datatype="INT"        description="Y ROI start"/>
+    <Attribute name="BinSizeX"        type="PARAM"    source="ARRAY_SIZE_X"            datatype="INT"        description="X ROI size"/>
+    <Attribute name="BinSizeY"        type="PARAM"    source="ARRAY_SIZE_Y"            datatype="INT"        description="Y ROI size"/>
+    <Attribute name="BinEnableScale"  type="PARAM"    source="ENABLE_SCALE"            datatype="INT"        description="Scaling Enabled"/>
+    <Attribute name="BinScaleValue"   type="PARAM"    source="SCALE_VALUE"             datatype="DOUBLE"     description="Scale Value"/>
+    <Attribute name="BinDataType"     type="PARAM"    source="ROI_DATA_TYPE"           datatype="INT"        description="ROI output data type"/>
+    
+<!--
+    <Attribute name="TimeStamp"     type="PARAM"    source="TIME_STAMP"              datatype="DOUBLE"     description="Time stamp"/>
+    <Attribute name="ROI0Mean"      type="PARAM"    source="MEAN_VALUE"              datatype="DOUBLE"     description="Mean value ROI 0"/>
+    <Attribute name="ROI1Mean"      type="PARAM"    source="MEAN_VALUE" addr="1"     datatype="DOUBLE"     description="Mean value ROI 0"/>
+    <Attribute name="ROI0Total"     type="PARAM"    source="TOTAL"                   datatype="DOUBLE"     description="Total counts ROI 0"/>
+    <Attribute name="ROI1Total"     type="PARAM"    source="TOTAL"      addr="1"     datatype="DOUBLE"     description="Total counts ROI 1"/>
+-->
+</Attributes>
+    
+    

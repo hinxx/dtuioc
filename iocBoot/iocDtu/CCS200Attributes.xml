@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="no" ?>
+<!-- Attributes -->
+<Attributes
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="NDAttributes.xsd"
+    >
+    <Attribute name="CameraManufacturer"  type="EPICS_PV" source="CCS1:det1:Manufacturer_RBV"     dbrtype="DBR_NATIVE"  description="Camera manufacturer"/>
+    <Attribute name="CameraModel"         type="EPICS_PV" source="CCS1:det1:Model_RBV"            dbrtype="DBR_NATIVE"  description="Camera model"/>
+    <Attribute name="ImageCounter"        type="EPICS_PV" source="CCS1:det1:ArrayCounter_RBV"     dbrtype="DBR_NATIVE"  description="Array counter"/>
+    <Attribute name="MaxSizeX"            type="EPICS_PV" source="CCS1:det1:MaxSizeX_RBV"         dbrtype="DBR_NATIVE"  description="Detector X size"/>
+    <Attribute name="MaxSizeY"            type="EPICS_PV" source="CCS1:det1:MaxSizeY_RBV"         dbrtype="DBR_NATIVE"  description="Detector Y size"/>
+    <Attribute name="BinX"                type="EPICS_PV" source="CCS1:det1:BinX_RBV"             dbrtype="DBR_NATIVE"  description="Binning in X"/>
+    <Attribute name="BinY"                type="EPICS_PV" source="CCS1:det1:BinY_RBV"             dbrtype="DBR_NATIVE"  description="Binning in Y"/>
+    <Attribute name="AcquireTimePV"       type="EPICS_PV" source="CCS1:det1:AcquireTime_RBV"      dbrtype="DBR_NATIVE"  description="Camera acquire time"/>
+    <Attribute name="AcquirePeriod"       type="EPICS_PV" source="CCS1:det1:AcquirePeriod_RBV"    dbrtype="DBR_NATIVE"  description="Acquire period"/>
+    <Attribute name="ImageMode"           type="EPICS_PV" source="CCS1:det1:ImageMode_RBV"        dbrtype="DBR_NATIVE"  description="Image mode"/>
+    <Attribute name="TriggerMode"         type="EPICS_PV" source="CCS1:det1:TriggerMode_RBV"      dbrtype="DBR_NATIVE"  description="Trigger mode"/>
+
+<!--
+    <Attribute name="ID_Energy"           type="EPICS_PV" source="ID34:Energy"                  dbrtype="DBR_NATIVE"  description="Undulator energy"/>
+    <Attribute name="AttributesFileParam"  type="PARAM"   source="ND_ATTRIBUTES_FILE"            datatype="STRING"     description="Attributes file param"/>
+-->
+</Attributes>
+    
+    
