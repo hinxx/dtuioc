@@ -8,7 +8,11 @@ if [ $? -ne 0 ]; then
 fi
 
 caput    CCS1:det1:TlWavelengthDataTarget 0
+caput    CCS1:det1:TlWavelengthDataGet 1
 caget    CCS1:det1:TlWavelengthMinimum CCS1:det1:TlWavelengthMaximum
+caput    CCS1:det1:TlAmplitudeDataMode 0
+caput    CCS1:det1:TlAmplitudeDataTarget 2
+caput    CCS1:det1:TlAmplitudeDataGet 1
 caput    CCS1:trace1:EnableCallbacks 1
 caput -S CCS1:HDF1:FilePath "/tmp"
 caput -S CCS1:HDF1:FileName "spectra"
