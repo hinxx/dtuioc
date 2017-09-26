@@ -17,6 +17,7 @@
     <Attribute name="TriggerMode"         type="EPICS_PV" source="CCS1:det1:TriggerMode_RBV"      dbrtype="DBR_NATIVE"  description="Trigger mode"/>
     <Attribute name="Current"             type="EPICS_PV" source="DTU:Current"                    dbrtype="DBR_NATIVE"  description="Current"/>
     <Attribute name="Temperature"         type="EPICS_PV" source="DTU:Temperature"                dbrtype="DBR_NATIVE"  description="Temperature"/>
+    <Attribute name="GaussParams"         type="EPICS_PV" source="DTU:GaussParams"                dbrtype="DBR_NATIVE"  description="Gauss params"/>
     <Attribute name="Sample"              type="EPICS_PV" source="DTU:Sample"                     dbrtype="DBR_STRING"  description="Sample"/>
     <Attribute name="Comment"             type="EPICS_PV" source="DTU:Comment"                    dbrtype="DBR_STRING"  description="Comment"/>
 
