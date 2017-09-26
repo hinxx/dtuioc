@@ -16,6 +16,8 @@
     <Attribute name="ImageMode"           type="EPICS_PV" source="CAM1:det1:ImageMode_RBV"        dbrtype="DBR_NATIVE"  description="Image mode"/>
     <Attribute name="TriggerMode"         type="EPICS_PV" source="CAM1:det1:TriggerMode_RBV"      dbrtype="DBR_NATIVE"  description="Trigger mode"/>
     <Attribute name="DeviceTemperature"   type="EPICS_PV" source="CAM1:det1:DeviceTemperatu0_RBV" dbrtype="DBR_NATIVE"  description="Device temperature"/>
+    <Attribute name="Gain"                type="EPICS_PV" source="CAM1:det1:Gain_RBV"             dbrtype="DBR_NATIVE"  description="Gain"/>
+    
     <Attribute name="Current"             type="EPICS_PV" source="DTU:Current"                    dbrtype="DBR_NATIVE"  description="Current"/>
     <Attribute name="Temperature"         type="EPICS_PV" source="DTU:Temperature"                dbrtype="DBR_NATIVE"  description="Temperature"/>
     <Attribute name="GaussParams"         type="EPICS_PV" source="DTU:GaussParams"                dbrtype="DBR_NATIVE"  description="Gauss params"/>
