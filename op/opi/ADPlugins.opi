@@ -649,7 +649,7 @@ $(pv_value)</tooltip>
           <R>Proc2:</R>
         </macros>
         <mode>1</mode>
-        <description>Process #1</description>
+        <description>Process #2</description>
       </action>
     </actions>
     <actions_from_pv>false</actions_from_pv>

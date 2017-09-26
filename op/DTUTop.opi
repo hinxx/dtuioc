@@ -244,7 +244,7 @@ $(pv_value)</tooltip>
     <width>455</width>
     <wuid>-38a1cf3e:15eb82994ba:-591b</wuid>
     <x>141</x>
-    <y>370</y>
+    <y>329</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Rectangle" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -342,7 +342,7 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <wuid>-38a1cf3e:15eb82994ba:-577b</wuid>
     <x>15</x>
-    <y>370</y>
+    <y>329</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -382,7 +382,7 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <wuid>-38a1cf3e:15eb82994ba:-5777</wuid>
     <x>15</x>
-    <y>176</y>
+    <y>207</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
     <actions hook="false" hook_all="false" />
@@ -439,7 +439,7 @@ $(pv_value)</tooltip>
     <width>455</width>
     <wuid>-38a1cf3e:15eb82994ba:-5774</wuid>
     <x>141</x>
-    <y>173</y>
+    <y>204</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -479,7 +479,7 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <wuid>-38a1cf3e:15eb82994ba:-576d</wuid>
     <x>15</x>
-    <y>256</y>
+    <y>269</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
     <actions hook="false" hook_all="false" />
@@ -536,7 +536,7 @@ $(pv_value)</tooltip>
     <width>455</width>
     <wuid>-38a1cf3e:15eb82994ba:-576c</wuid>
     <x>141</x>
-    <y>253</y>
+    <y>266</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -576,7 +576,7 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <wuid>-38a1cf3e:15eb82994ba:-572d</wuid>
     <x>15</x>
-    <y>225</y>
+    <y>238</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
     <actions hook="false" hook_all="false" />
@@ -633,7 +633,7 @@ $(pv_value)</tooltip>
     <width>455</width>
     <wuid>-38a1cf3e:15eb82994ba:-572c</wuid>
     <x>141</x>
-    <y>222</y>
+    <y>235</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -673,7 +673,7 @@ $(pv_value)</tooltip>
     <wrap_words>false</wrap_words>
     <wuid>-38a1cf3e:15eb82994ba:-557b</wuid>
     <x>15</x>
-    <y>287</y>
+    <y>300</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
     <actions hook="false" hook_all="false" />
@@ -707,8 +707,8 @@ $(pv_value)</tooltip>
     <multiline_input>false</multiline_input>
     <name>Text Input_4</name>
     <precision>3</precision>
-    <precision_from_pv>true</precision_from_pv>
-    <pv_name>$(P)$(R)Current</pv_name>
+    <precision_from_pv>false</precision_from_pv>
+    <pv_name>$(P)$(R)GaussParams</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules />
@@ -730,6 +730,46 @@ $(pv_value)</tooltip>
     <width>455</width>
     <wuid>-38a1cf3e:15eb82994ba:-557a</wuid>
     <x>141</x>
-    <y>284</y>
+    <y>297</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Noto Sans" height="9" style="1" pixels="false">Default Bold</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>20</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_6</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>Following user settable PVs are saved to HDF5 file</text>
+    <tooltip></tooltip>
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>594</width>
+    <wrap_words>false</wrap_words>
+    <wuid>-38a1cf3e:15eb82994ba:-5515</wuid>
+    <x>4</x>
+    <y>170</y>
   </widget>
 </display>
