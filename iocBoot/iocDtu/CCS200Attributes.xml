@@ -15,9 +15,19 @@
     <Attribute name="AcquirePeriod"       type="EPICS_PV" source="CCS1:det1:AcquirePeriod_RBV"    dbrtype="DBR_NATIVE"  description="Acquire period"/>
     <Attribute name="ImageMode"           type="EPICS_PV" source="CCS1:det1:ImageMode_RBV"        dbrtype="DBR_NATIVE"  description="Image mode"/>
     <Attribute name="TriggerMode"         type="EPICS_PV" source="CCS1:det1:TriggerMode_RBV"      dbrtype="DBR_NATIVE"  description="Trigger mode"/>
+    
     <Attribute name="Current"             type="EPICS_PV" source="DTU:Current"                    dbrtype="DBR_NATIVE"  description="Current"/>
     <Attribute name="Temperature"         type="EPICS_PV" source="DTU:Temperature"                dbrtype="DBR_NATIVE"  description="Temperature"/>
-    <Attribute name="GaussParams"         type="EPICS_PV" source="DTU:GaussParams"                dbrtype="DBR_NATIVE"  description="Gauss params"/>
+    <Attribute name="GaussParam1"         type="EPICS_PV" source="DTU:GaussParam1"                dbrtype="DBR_NATIVE"  description="Gauss param 1"/>
+    <Attribute name="GaussParam2"         type="EPICS_PV" source="DTU:GaussParam2"                dbrtype="DBR_NATIVE"  description="Gauss param 2"/>
+    <Attribute name="GaussParam3"         type="EPICS_PV" source="DTU:GaussParam3"                dbrtype="DBR_NATIVE"  description="Gauss param 3"/>
+    <Attribute name="GaussParam4"         type="EPICS_PV" source="DTU:GaussParam4"                dbrtype="DBR_NATIVE"  description="Gauss param 4"/>
+    <Attribute name="GaussParam5"         type="EPICS_PV" source="DTU:GaussParam5"                dbrtype="DBR_NATIVE"  description="Gauss param 5"/>
+    <Attribute name="GaussParam6"         type="EPICS_PV" source="DTU:GaussParam6"                dbrtype="DBR_NATIVE"  description="Gauss param 6"/>
+    <Attribute name="GaussParam7"         type="EPICS_PV" source="DTU:GaussParam7"                dbrtype="DBR_NATIVE"  description="Gauss param 7"/>
+    <Attribute name="GaussParam8"         type="EPICS_PV" source="DTU:GaussParam8"                dbrtype="DBR_NATIVE"  description="Gauss param 8"/>
+    <Attribute name="GaussParam9"         type="EPICS_PV" source="DTU:GaussParam9"                dbrtype="DBR_NATIVE"  description="Gauss param 9"/>
+    <Attribute name="GaussParam10"        type="EPICS_PV" source="DTU:GaussParam10"               dbrtype="DBR_NATIVE"  description="Gauss param 10"/>
     <Attribute name="Sample"              type="EPICS_PV" source="DTU:Sample"                     dbrtype="DBR_STRING"  description="Sample"/>
     <Attribute name="Comment"             type="EPICS_PV" source="DTU:Comment"                    dbrtype="DBR_STRING"  description="Comment"/>
 
