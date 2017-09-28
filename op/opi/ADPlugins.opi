@@ -634,6 +634,24 @@ $(pv_value)</tooltip>
         <description>Image #1</description>
       </action>
       <action type="OPEN_DISPLAY">
+        <path>NDImage.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <R>image2:</R>
+        </macros>
+        <mode>1</mode>
+        <description>Image #2</description>
+      </action>
+      <action type="OPEN_DISPLAY">
+        <path>NDImage.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <R>image3:</R>
+        </macros>
+        <mode>1</mode>
+        <description>Image #3</description>
+      </action>
+      <action type="OPEN_DISPLAY">
         <path>NDProcess.opi</path>
         <macros>
           <include_parent_macros>true</include_parent_macros>

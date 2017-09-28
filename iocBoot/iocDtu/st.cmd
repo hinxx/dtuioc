@@ -27,9 +27,13 @@ dbLoadRecords("$(ADARAVIS)/db/aravisCamera.template",   "P=$(PREFIX),R=det1:,POR
 dbLoadRecords("$(ADARAVIS)/db/AVT_Manta_G235B.template","P=$(PREFIX),R=det1:,PORT=$(PORT),ADDR=0,TIMEOUT=1")
 
 # Create a standard arrays plugin
+# Allow for images up to 1936x1216x3 for RGB
 NDStdArraysConfigure("$(PORT)Image1", 5, 0, "$(PORT)", 0, 0)
-# Allow for cameras up to 1936x1216x3 for RGB
 dbLoadRecords("$(ADCORE)/db/NDStdArrays.template", "P=$(PREFIX),R=image1:,PORT=$(PORT)Image1,ADDR=0,TIMEOUT=1,NDARRAY_PORT=$(PORT),TYPE=Int16,FTVL=SHORT,NELEMENTS=7062528")
+NDStdArraysConfigure("$(PORT)Image2", 5, 0, "$(PORT)", 0, 0)
+dbLoadRecords("$(ADCORE)/db/NDStdArrays.template", "P=$(PREFIX),R=image2:,PORT=$(PORT)Image2,ADDR=0,TIMEOUT=1,NDARRAY_PORT=$(PORT),TYPE=Int16,FTVL=SHORT,NELEMENTS=7062528")
+NDStdArraysConfigure("$(PORT)Image3", 5, 0, "$(PORT)", 0, 0)
+dbLoadRecords("$(ADCORE)/db/NDStdArrays.template", "P=$(PREFIX),R=image3:,PORT=$(PORT)Image3,ADDR=0,TIMEOUT=1,NDARRAY_PORT=$(PORT),TYPE=Int16,FTVL=SHORT,NELEMENTS=7062528")
 
 # Load all other plugins using commonPlugins.cmd
 < $(TOP)/iocBoot/$(IOC)/commonPlugins.cmd
@@ -65,6 +69,10 @@ dbLoadRecords("$(ADTLCCS)/tlccsApp/Db/tlccs.template", "P=$(PREFIX),R=det1:,PORT
 # Create standard arrays plugin for a trace
 NDStdArraysConfigure("$(PORT)Trace1", $(QSIZE), 0, "$(PORT)", 0, 0)
 dbLoadRecords("$(ADCORE)/ADApp/Db/NDStdArrays.template", "P=$(PREFIX),R=trace1:,PORT=$(PORT)Trace1,ADDR=0,TIMEOUT=1,TYPE=Float64,FTVL=DOUBLE,NELEMENTS=4000,NDARRAY_PORT=$(PORT),NDARRAY_ADDR=0")
+NDStdArraysConfigure("$(PORT)Trace2", $(QSIZE), 0, "$(PORT)", 0, 0)
+dbLoadRecords("$(ADCORE)/ADApp/Db/NDStdArrays.template", "P=$(PREFIX),R=trace2:,PORT=$(PORT)Trace2,ADDR=0,TIMEOUT=1,TYPE=Float64,FTVL=DOUBLE,NELEMENTS=4000,NDARRAY_PORT=$(PORT),NDARRAY_ADDR=0")
+NDStdArraysConfigure("$(PORT)Trace3", $(QSIZE), 0, "$(PORT)", 0, 0)
+dbLoadRecords("$(ADCORE)/ADApp/Db/NDStdArrays.template", "P=$(PREFIX),R=trace3:,PORT=$(PORT)Trace3,ADDR=0,TIMEOUT=1,TYPE=Float64,FTVL=DOUBLE,NELEMENTS=4000,NDARRAY_PORT=$(PORT),NDARRAY_ADDR=0")
 
 
 ## Load all other plugins using commonPlugins.cmd
