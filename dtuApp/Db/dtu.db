@@ -8,13 +8,13 @@ record(waveform, "$(P)$(R)Comment")
 record(ai, "$(P)$(R)Current")
 {
 	field(VAL,  "0")
-	field(PREC, "3")
+	field(PREC, "6")
 }
 
 record(ai, "$(P)$(R)Temperature")
 {
 	field(VAL,  "0")
-	field(PREC, "3")
+	field(PREC, "1")
 }
 
 record(waveform, "$(P)$(R)Sample")
@@ -23,8 +23,52 @@ record(waveform, "$(P)$(R)Sample")
 	field(NELM, "256")
 }
 
-record(waveform, "$(P)$(R)GaussParams")
+record(ai, "$(P)$(R)GaussParam1")
 {
-	field(FTVL, "DOUBLE")
-	field(NELM, "10")
+	field(PREC, "6")
+}
+
+record(ai, "$(P)$(R)GaussParam2")
+{
+	field(PREC, "6")
+}
+
+record(ai, "$(P)$(R)GaussParam3")
+{
+	field(PREC, "6")
+}
+
+record(ai, "$(P)$(R)GaussParam4")
+{
+	field(PREC, "6")
+}
+
+record(ai, "$(P)$(R)GaussParam5")
+{
+	field(PREC, "6")
+}
+
+record(ai, "$(P)$(R)GaussParam6")
+{
+	field(PREC, "6")
+}
+
+record(ai, "$(P)$(R)GaussParam7")
+{
+	field(PREC, "6")
+}
+
+record(ai, "$(P)$(R)GaussParam8")
+{
+	field(PREC, "6")
+}
+
+record(ai, "$(P)$(R)GaussParam9")
+{
+	field(PREC, "6")
+}
+
+record(ai, "$(P)$(R)GaussParam10")
+{
+	field(PREC, "6")
 }
