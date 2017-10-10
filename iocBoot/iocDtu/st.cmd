@@ -74,6 +74,14 @@ dbLoadRecords("$(ADCORE)/ADApp/Db/NDStdArrays.template", "P=$(PREFIX),R=trace2:,
 NDStdArraysConfigure("$(PORT)Trace3", $(QSIZE), 0, "$(PORT)", 0, 0)
 dbLoadRecords("$(ADCORE)/ADApp/Db/NDStdArrays.template", "P=$(PREFIX),R=trace3:,PORT=$(PORT)Trace3,ADDR=0,TIMEOUT=1,TYPE=Float64,FTVL=DOUBLE,NELEMENTS=4000,NDARRAY_PORT=$(PORT),NDARRAY_ADDR=0")
 
+## Load all other plugins using commonPlugins.cmd
+< $(TOP)/iocBoot/$(IOC)/commonPlugins.cmd
+
+#set_requestfile_path("$(ADTLCCS)/tlccsApp/Db")
+
+#asynSetTraceIOMask("$(PORT)",0,2)
+#asynSetTraceMask("$(PORT)",0,255)
+
 ################################################################################
 ## Thorlabs CCS100
 ################################################################################
