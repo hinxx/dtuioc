@@ -126,9 +126,9 @@
 $(pv_value)</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
-    <width>182</width>
+    <width>160</width>
     <wuid>-1ee33d7e:14c80d1e20e:-7952</wuid>
-    <x>64</x>
+    <x>23</x>
     <y>45</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
@@ -183,9 +183,9 @@ $(pv_value)</tooltip>
 $(pv_value)</tooltip>
     <visible>true</visible>
     <widget_type>Action Button</widget_type>
-    <width>182</width>
+    <width>160</width>
     <wuid>b49da55:15ea9f15248:-7d75</wuid>
-    <x>316</x>
+    <x>219</x>
     <y>45</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.TextInput" version="2.0.0">
@@ -1684,5 +1684,62 @@ $(pv_value)</tooltip>
     <wuid>-38a1cf3e:15eb82994ba:-4ada</wuid>
     <x>4</x>
     <y>392</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+    <actions hook="false" hook_all="false">
+      <action type="OPEN_DISPLAY">
+        <path>opi/tlccs.opi</path>
+        <macros>
+          <include_parent_macros>true</include_parent_macros>
+          <P>CCS2:</P>
+          <R>det1:</R>
+        </macros>
+        <mode>1</mode>
+        <description>CCS100 spectrometer</description>
+      </action>
+    </actions>
+    <alarm_pulsing>false</alarm_pulsing>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color name="ioc_write_bg" red="115" green="223" blue="255" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>6</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Noto Sans" height="9" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color name="Gray_14" red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>48</height>
+    <image></image>
+    <name>Menu Button_2</name>
+    <push_action_index>0</push_action_index>
+    <pv_name></pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <style>0</style>
+    <text>$(actions)</text>
+    <toggle_button>false</toggle_button>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <visible>true</visible>
+    <widget_type>Action Button</widget_type>
+    <width>160</width>
+    <wuid>-35817222:15f05039c37:-7f64</wuid>
+    <x>415</x>
+    <y>45</y>
   </widget>
 </display>

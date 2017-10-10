@@ -74,6 +74,35 @@ dbLoadRecords("$(ADCORE)/ADApp/Db/NDStdArrays.template", "P=$(PREFIX),R=trace2:,
 NDStdArraysConfigure("$(PORT)Trace3", $(QSIZE), 0, "$(PORT)", 0, 0)
 dbLoadRecords("$(ADCORE)/ADApp/Db/NDStdArrays.template", "P=$(PREFIX),R=trace3:,PORT=$(PORT)Trace3,ADDR=0,TIMEOUT=1,TYPE=Float64,FTVL=DOUBLE,NELEMENTS=4000,NDARRAY_PORT=$(PORT),NDARRAY_ADDR=0")
 
+################################################################################
+## Thorlabs CCS100
+################################################################################
+
+# Resource string: USB::VID::PID::SERIAL::RAW
+epicsEnvSet("RSCSTR", "USB::0x1313::0x8081::M00310589::RAW")
+
+epicsEnvSet("PREFIX", "CCS2:")
+epicsEnvSet("PORT",   "CCS2")
+epicsEnvSet("QSIZE",  "20")
+epicsEnvSet("XSIZE",  "3648")
+epicsEnvSet("YSIZE",  "1")
+epicsEnvSet("NCHANS", "2048")
+epicsEnvSet("CBUFFS", "500")
+
+# Create a Thorlabs CCSxxx driver
+# tlCCSConfig(const char *portName, int maxBuffers, size_t maxMemory, 
+#             const char *resourceName, int priority, int stackSize)
+tlCCSConfig("$(PORT)", 0, 0, "$(RSCSTR)", 0, 0)
+dbLoadRecords("$(ADTLCCS)/tlccsApp/Db/tlccs.template", "P=$(PREFIX),R=det1:,PORT=$(PORT),ADDR=0,TIMEOUT=1,NELEMENTS=$(XSIZE)")
+
+# Create standard arrays plugin for a trace
+NDStdArraysConfigure("$(PORT)Trace1", $(QSIZE), 0, "$(PORT)", 0, 0)
+dbLoadRecords("$(ADCORE)/ADApp/Db/NDStdArrays.template", "P=$(PREFIX),R=trace1:,PORT=$(PORT)Trace1,ADDR=0,TIMEOUT=1,TYPE=Float64,FTVL=DOUBLE,NELEMENTS=4000,NDARRAY_PORT=$(PORT),NDARRAY_ADDR=0")
+NDStdArraysConfigure("$(PORT)Trace2", $(QSIZE), 0, "$(PORT)", 0, 0)
+dbLoadRecords("$(ADCORE)/ADApp/Db/NDStdArrays.template", "P=$(PREFIX),R=trace2:,PORT=$(PORT)Trace2,ADDR=0,TIMEOUT=1,TYPE=Float64,FTVL=DOUBLE,NELEMENTS=4000,NDARRAY_PORT=$(PORT),NDARRAY_ADDR=0")
+NDStdArraysConfigure("$(PORT)Trace3", $(QSIZE), 0, "$(PORT)", 0, 0)
+dbLoadRecords("$(ADCORE)/ADApp/Db/NDStdArrays.template", "P=$(PREFIX),R=trace3:,PORT=$(PORT)Trace3,ADDR=0,TIMEOUT=1,TYPE=Float64,FTVL=DOUBLE,NELEMENTS=4000,NDARRAY_PORT=$(PORT),NDARRAY_ADDR=0")
+
 
 ## Load all other plugins using commonPlugins.cmd
 < $(TOP)/iocBoot/$(IOC)/commonPlugins.cmd
